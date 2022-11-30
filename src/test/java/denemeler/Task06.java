@@ -1,6 +1,7 @@
 package denemeler;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.json.JSONObject;
@@ -45,6 +46,7 @@ public class Task06 {
                 .body("title", Matchers.equalTo("API"))
                 .body("userId",Matchers.lessThan(100))
                 .body("body",Matchers.containsString("API"));
+
 
     }
 
