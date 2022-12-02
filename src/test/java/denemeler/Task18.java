@@ -16,6 +16,8 @@ public class Task18 extends BaseUrlHerokuApp {
 
      */
 
+    //Yapamadım//
+
     @Test
     public void Test18(){
         specHerokuapp.pathParam("pp1","booking").queryParam("firstname","Eric");

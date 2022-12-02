@@ -26,6 +26,9 @@ public class Task16 extends BaseUrlHerokuApp {
         "additionalneeds" : "wi-fi" }
      */
 
+    //Yapamadım
+
+
     @Test
     public void test16(){
 
