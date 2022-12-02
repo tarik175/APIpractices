@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-public class Test18 extends BaseUrlHerokuApp {
+public class Task18 extends BaseUrlHerokuApp {
     /*
     2- https://restful-booker.herokuapp.com/booking endpointine
     gerekli Query parametrelerini yazarak
