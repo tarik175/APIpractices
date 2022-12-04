@@ -9,7 +9,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.groovy.json.internal.Chr;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -37,10 +36,9 @@ public class OrHrTest {
 
 
     @Before
-    @org.junit.Before
     public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         waitexp= new WebDriverWait(driver, Duration.ofSeconds(20));
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         Thread.sleep(2000);
