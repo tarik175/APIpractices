@@ -1,3 +1,4 @@
+@guru
 Feature: feature to test orangeHrm functionality
 
   Scenario:

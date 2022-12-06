@@ -99,9 +99,6 @@ public class OrHrTest {
         dashboard.dropDownLogOut.click();
     }
 
-    public void user_logged_in11() throws InterruptedException {
-        loginpage.orHrlogin();
-        Thread.sleep(2000);
 
 
 }
