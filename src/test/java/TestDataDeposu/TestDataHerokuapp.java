@@ -43,9 +43,28 @@ public class TestDataHerokuapp {
         expectedData.put("bookingid",24);
         expectedData.put("booking",bookingBody);
 
+        public JSONObject postRequestExpectedDataOlusturkopya(){
+
+            JSONObject expectedData1 = new JSONObject();
+            JSONObject bookingBody1 = new JSONObject();
+            JSONObject bookingdatesBody1 = new JSONObject();
+
+            bookingdatesBody1.put("checkin", "2021-06-01");
+            bookingdatesBody1.put("checkout", "2021-06-10");
+
+            bookingBody1.put("firstname", "Ahmet");
+            bookingBody1.put("lastname", "Bulut");
+            bookingBody1.put("totalprice", 500);
+            bookingBody1.put("depositpaid", false);
+            bookingBody1.put("bookingdates",bookingdatesBody1);
+            bookingBody1.put("additionalneeds", "wi-fi");
+
+            expectedData1.put("bookingid",24);
+            expectedData1.put("booking",bookingBody1);
 
 
-        return expectedData;
+
+        return expectedData1;
     }
 
     public Map<String,Object> requestBodyMapOlustur(){
