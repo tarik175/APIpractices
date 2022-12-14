@@ -95,6 +95,10 @@ public class C30_Post_Pojo {
         Assert.assertEquals(expectedDataPojo.getName(),responseJsonpath.get("name"));
         Assert.assertEquals(expectedDataPojo.getCoord().getLat(),responseJsonpath.get("coord.lat"));
 
+        Assert.assertEquals(expectedDataPojo.getSys().getCountry(),responseJsonpath.get("sys.country"));
+        Assert.assertEquals(expectedDataPojo.getName(),responseJsonpath.get("name"));
+        Assert.assertEquals(expectedDataPojo.getCoord().getLat(),responseJsonpath.get("coord.lat"));
+
 
     }
 }
