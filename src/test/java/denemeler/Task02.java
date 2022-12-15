@@ -46,4 +46,17 @@ public class Task02 {
 
 
     }
+    @Test
+    public void test3(){
+        String url="https://restful-booker.herokuapp.com/booking/10 ";
+        Response response= RestAssured.get(url);
+        response.prettyPrint();
+        response.then().assertThat().
+                statusCode(200).
+                contentType(ContentType.JSON).
+                statusLine("HTTP/1.1 200 OK").
+                header("Server","Cowboy");
+
+
+    }
 }
